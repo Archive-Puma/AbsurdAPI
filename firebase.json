@@ -19,7 +19,7 @@
       }
     ],
     "rewrites": [ {
-      "source": "/v1", "function": "_random"
+      "source": "/v1", "function": "Random"
     }]
   },
   "functions": {

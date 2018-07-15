@@ -16,7 +16,7 @@ absurdeces = [
   'Es una pena que los adivinos no puedan tener hijos porque tienen las bolas de cristal.'
 ]
 
-exports._random = functions.https.onRequest((request, response) => {
+exports.Random = functions.https.onRequest((request, response) => {
  response.status(200).json({
    text: absurdeces[Math.floor(Math.random() * absurdeces.length)]
  })
