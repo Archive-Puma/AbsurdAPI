@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/v1",
+        "type": 308
+      },
+      {
+        "source": "/index.html",
+        "destination": "/v1",
+        "type": 308
+      }
+    ],
+    "rewrites": [ {
+      "source": "/v1", "function": "_random"
+    }]
+  },
+  "functions": {
+    "predeploy": [ ]
+  }
+}
